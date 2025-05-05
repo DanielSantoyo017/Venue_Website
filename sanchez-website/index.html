@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Sanchez Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/sanchez-website.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: [
+          "Varela:400", "Inter:regular", "Instrument Sans:regular",
+          "Baskervville:regular", "Carlito:regular,700", "Playfair Display:regular,500,600,700,800,900"
+        ]
+      }
+    });
+  </script>
+
+
+
+  <!-- Swiper Custom Styles -->
+  <style>
+    .swiper {
+      width: 100%;
+      max-width: 900px;
+      height: auto;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .swiper-slide img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      display: block;
+    }
+    .swiper-pagination {
+      bottom: 10px !important;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="navbar-inner">
+      <a href="#"><img src="images/Sanchez-Venues.svg" width="100" alt="Logo" class="main-logo"></a>
+      <div class="nav-button"><div class="nav-icon"></div></div>
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link active" aria-current="page">Home</a>
+        <a href="the-oak.html" class="nav-link">The Oak</a>
+        <a href="the-rustic-ranch.html" class="nav-link">The Rustic Ranch</a>
+        <a href="quote-form.html" class="nav-link">Quotes</a>
+        <a href="FAQ.html" class="nav-link">FAQ</a>
+      </nav>
+    </div>
+  </div>
+
+  <div class="line-div"></div>
+
+<main>
+<!-- Hero Section -->
+<section class="home">
+  <div class="container">
+    <div class="hero-wrapper">
+      <h1 class="welcom_heading">More than a venue—where your unforgettable moments come to life.</h1>
+
+
+      <!-- Swiper Carousel -->
+      <div class="swiper homeSwiper">
+        <div class="swiper-wrapper">
+          <!-- Oak Images -->
+          <div class="swiper-slide"><img src="images/AO1.png" alt="The Oak at Austin 1"></div>
+          <div class="swiper-slide"><img src="images/AO2.png" alt="The Oak at Austin 2"></div>
+          <div class="swiper-slide"><img src="images/AO3.png" alt="The Oak at Austin 3"></div>
+          <div class="swiper-slide"><img src="images/AO4.png" alt="The Oak at Austin 4"></div>
+          <div class="swiper-slide"><img src="images/AO5.png" alt="The Oak at Austin 5"></div>
+          <div class="swiper-slide"><img src="images/AO6.png" alt="The Oak at Austin 6"></div>
+          <!-- Ranch Images -->
+          <div class="swiper-slide"><img src="images/RR1.png" alt="Rustic Ranch 1"></div>
+          <div class="swiper-slide"><img src="images/RR2.png" alt="Rustic Ranch 2"></div>
+          <div class="swiper-slide"><img src="images/RR3.png" alt="Rustic Ranch 3"></div>
+          <div class="swiper-slide"><img src="images/RR4.png" alt="Rustic Ranch 4"></div>
+          <div class="swiper-slide"><img src="images/RR5.png" alt="Rustic Ranch 5"></div>
+          <div class="swiper-slide"><img src="images/RR6.png" alt="Rustic Ranch 6"></div>
+        </div>
+        
+      </div>
+
+      <h2 id="Sales_Heading" class="heading-4">Where Your Celebration Feels at Home</h2>
+
+      <p class="sales_pitch">
+        Nestled in the heart of the San Joaquin Valley, our venues offer the perfect blend of rustic charm and natural beauty for your special event.
+        Choose between our elegant stone ranch or a breathtaking open space, where a majestic hundred-year-old oak tree stands as the centerpiece of your celebration.
+        Whether you're planning a wedding, party, or corporate gathering, we provide a stunning setting at affordable rates to make your vision a reality.
+      </p>
+
+      <a href="quote-form.html" class="button">Get Quote Today!</a>
+
+      <!-- Voiceflow Chatbot Embed -->
+      <script type="text/javascript">
+        (function (d, t) {
+          var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+          v.onload = function () {
+            window.voiceflow.chat.load({
+              verify: { projectID: '6806f92fb5f945ac7d444a19' },
+              url: 'https://general-runtime.voiceflow.com',
+              versionID: 'production',
+              voice: {
+                url: "https://runtime-api.voiceflow.com"
+              }
+            });
+          };
+          v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs";
+          v.type = "text/javascript";
+          s.parentNode.insertBefore(v, s);
+        })(document, 'script');
+      </script>
+    </div>
+  </div> <!-- End container -->
+</section>
+
+
+
+<!-- Venue Cards -->
+<section class="venue_cards">
+  <div class="container">
+    <div class="container-4">
+
+      <div class="card the_ranch_card">
+        <img src="images/image-18.jpg" alt="Rustic Ranch">
+        <h3>The Rustic Stone Ranch</h3>
+        <p>
+          A rustic yet elegant venue with grand stone architecture and warm wood accents.
+          Perfect for grand celebrations under twinkling lights.
+        </p>
+        <a href="the-rustic-ranch.html" class="button">More Info</a>
+      </div>
+
+      <div class="card the_oak_card">
+        <img src="images/Austin_Aly_Kai3.jpg" alt="The Oak at Austin">
+        <h3>The Oak at Austin</h3>
+        <p>
+          A breathtaking open-air venue where a majestic century-old oak tree sets the tone
+          for magical celebrations surrounded by nature.
+        </p>
+        <a href="the-oak.html" class="button">More Info</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footerContainer">
+      <div class="socialIcons">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener">
+          <img src="images/Instagram.svg" alt="Instagram" class="social-icon">
+        </a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener">
+          <img src="images/Facebook.svg" alt="Facebook" class="social-icon">
+        </a>
+      </div>
+      
+  
+      <div class="footerNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="the-oak.html">The Oak</a></li>
+          <li><a href="the-rustic-ranch.html">Rustic Ranch</a></li>
+          <li><a href="quote-form.html">Quote</a></li>
+          <li><a href="FAQ.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+  
+    <div class="footerBottom">
+      <p>©2025 Sanchez Valley Venues</p>
+    </div>
+  </footer>
+
+
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var homeSwiper = new Swiper(".homeSwiper", {
+      loop: true,
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+</html>

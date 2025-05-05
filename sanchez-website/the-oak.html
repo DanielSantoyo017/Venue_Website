@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>The Oak</title>
+  <meta property="og:title" content="The Oak">
+  <meta property="twitter:title" content="The Oak">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/sanchez-website.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: [
+          "Varela:400", "Inter:regular", "Instrument Sans:regular",
+          "Baskervville:regular", "Carlito:regular,700", "Playfair Display:regular,500,600,700,800,900"
+        ]
+      }
+    });
+  </script>
+
+  <!-- Swiper Custom Styles -->
+  <style>
+    .swiper {
+      width: 100%;
+      max-width: 900px;
+      height: auto;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .swiper-slide img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      display: block;
+    }
+    .swiper-pagination {
+      bottom: 10px !important;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="navbar-inner">
+      <a href="#"><img src="images/Sanchez-Venues.svg" width="100" alt="Logo" class="main-logo"></a>
+      <div class="nav-button"><div class="nav-icon"></div></div>
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="the-oak.html" class="nav-link active">The Oak</a>
+        <a href="the-rustic-ranch.html" class="nav-link">The Rustic Ranch</a>
+        <a href="quote-form.html" class="nav-link">Quotes</a>
+        <a href="FAQ.html" class="nav-link">FAQ</a>
+      </nav>
+    </div>
+  </div>
+
+  <div class="line-div"></div>
+
+<main>
+  <section class="oak_header_group">
+    <div class="container">
+      <div class="hero-wrapper">
+        <h1 class="heading-9">The Oak At Austin</h1>
+        <p class="paragraph-4">The heart of every celebration—beneath the towering beauty of a century-old oak</p>
+        <div class="location-wrapper">
+          <div class="location">
+            <img src="images/Map-Pin.svg" width="31" alt="">
+            <span class="location-text">Manteca, Ca</span>
+          </div>
+        </div>
+  
+        <!-- Swiper INSIDE the same section -->
+        <div class="swiper oakSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/AO1.png" alt="Oak Venue 1"></div>
+            <div class="swiper-slide"><img src="images/AO2.png" alt="Oak Venue 2"></div>
+            <div class="swiper-slide"><img src="images/AO3.png" alt="Oak Venue 3"></div>
+            <div class="swiper-slide"><img src="images/AO4.png" alt="Oak Venue 4"></div>
+            <div class="swiper-slide"><img src="images/AO5.png" alt="Oak Venue 5"></div>
+            <div class="swiper-slide"><img src="images/AO6.png" alt="Oak Venue 6"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+  
+        <a href="quote-form.html" class="button">Get Quote Today!</a>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- About Section -->
+  <section class="oak_description">
+    <div class="container">
+      <div class="div-block-6">
+        <h1 class="heading-12">What We Offer</h1>
+        <p class="paragraph-7">
+          Tucked away in a serene, open space, The Oak at Austin is centered around a breathtaking hundred-year-old oak tree.
+          This natural landmark creates an intimate and enchanting atmosphere, surrounded by lush greenery and endless sky.
+        </p>
+        <h1 class="heading-13">About the Venue</h1>
+        <p class="paragraph-8">
+          The Oak at Austin provides a spacious outdoor venue perfect for weddings, receptions, and special gatherings.
+          With customizable layouts, flexible seating, and scenic views, it’s designed to bring your vision to life.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="line-div"></div>
+</main>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footerContainer">
+      <div class="socialIcons">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener">
+          <img src="images/Instagram.svg" alt="Instagram" class="social-icon">
+        </a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener">
+          <img src="images/Facebook.svg" alt="Facebook" class="social-icon">
+        </a>
+      </div>
+      
+  
+      <div class="footerNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="the-oak.html">The Oak</a></li>
+          <li><a href="the-rustic-ranch.html">Rustic Ranch</a></li>
+          <li><a href="quote-form.html">Quote</a></li>
+          <li><a href="the-oak-at-austin.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+  
+    <div class="footerBottom">
+      <p>©2025 Sanchez Valley Venues</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    const oakSwiper = new Swiper(".oakSwiper", {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+</html>

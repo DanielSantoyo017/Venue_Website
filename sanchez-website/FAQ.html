@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>FAQ | Sanchez Valley Venues</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/sanchez-website.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="navbar-inner">
+      <a href="#"><img src="images/Sanchez-Venues.svg" width="100" alt="Logo" class="main-logo"></a>
+      <div class="nav-button"><div class="nav-icon"></div></div>
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="the-oak.html" class="nav-link">The Oak</a>
+        <a href="the-rustic-ranch.html" class="nav-link">The Rustic Ranch</a>
+        <a href="quote-form.html" class="nav-link">Quotes</a>
+        <a href="the-oak-at-austin.html" class="nav-link active" aria-current="page">FAQ</a>
+      </nav>
+    </div>
+  </div>
+
+  <div class="line-div"></div>
+
+  <!-- Main Content -->
+  <main>
+    <section class="faq-section">
+      <div class="container">
+        <h1 class="faq-heading">Frequently Asked Questions</h1>
+
+        <div class="faq-item">
+          <button class="faq-question">What services do your venues provide?</button>
+          <div class="faq-answer">
+            <p>We offer elegant venues for weddings, receptions, corporate events, and more — all customizable to your needs.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">Can I schedule a tour?</button>
+          <div class="faq-answer">
+            <p>Absolutely. Fill out our quote form and we’ll reach out to arrange a personalized tour of your selected venue.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">Do you offer on-site coordination?</button>
+          <div class="faq-answer">
+            <p>Yes! We offer on-site coordination services to help ensure your day runs smoothly from start to finish.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">Are there decoration or catering restrictions?</button>
+          <div class="faq-answer">
+            <p>You are free to decorate as you wish and choose any caterer you like, with a few safety and property-friendly guidelines.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">How far in advance should I book?</button>
+          <div class="faq-answer">
+            <p>We recommend booking at least 6–12 months in advance to secure your preferred date, especially during peak season.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">How far in advance should I Plan?</button>
+            <div class="faq-answer">
+              <p>We recommend booking at least 6–12 months in advance to secure your preferred date, especially during peak season.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">How far in advance should I Send Inviations?</button>
+            <div class="faq-answer">
+              <p>We recommend booking at least 6–12 months in advance to secure your preferred date, especially during peak season.</p>
+            </div>
+          </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footerContainer">
+      <div class="socialIcons">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener">
+          <img src="images/Instagram.svg" alt="Instagram" class="social-icon">
+        </a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener">
+          <img src="images/Facebook.svg" alt="Facebook" class="social-icon">
+        </a>
+      </div>
+
+      <div class="footerNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="the-oak.html">The Oak</a></li>
+          <li><a href="the-rustic-ranch.html">Rustic Ranch</a></li>
+          <li><a href="quote-form.html">Quote</a></li>
+          <li><a href="FAQ.html" aria-current="page" class="active">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footerBottom">
+      <p>©2025 Sanchez Valley Venues</p>
+    </div>
+  </footer>
+
+  <!-- FAQ Toggle Script -->
+  <script>
+    const faqs = document.querySelectorAll('.faq-question');
+    faqs.forEach(btn => {
+      btn.addEventListener('click', () => {
+        btn.nextElementSibling.classList.toggle('open');
+      });
+    });
+  </script>
+
+</body>
+</html>
